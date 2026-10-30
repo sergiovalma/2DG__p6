@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas web</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+        --neutral-w-color: #fff;
+      }
+    body { 
+        margin: 0; 
+        padding: 40px;
+      }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+      
+    .card {
+      box-sizing: border-box;
+      max-width: 700px;
+      min-width: 250px;
+      height: 300px;
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 32px;
+      background:
+        radial-gradient(40% 24% at 67% 100%, #229db0, transparent),
+        radial-gradient(55% 33% at 0% 35%, #1b374f, transparent),
+        radial-gradient(50% 25% at 55% 50%, #3a206d, transparent),
+        linear-gradient(#212035, #4a69a1);
+      font-family: "Inter", sans-serif;
+      color: var(--neutral-w-color);
+    }
+
+    .card__img {
+      flex: 1;
+      min-width: 200px;
+      min-height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .card__body {
+      max-width: 400px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      gap: 24px;
+      padding: 0 10px;
+    }
+
+    .card__text {
+      padding: 10px;
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .card__desc {
+      margin: 34px 0 0;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .buttonBuy {
+      padding: 14px;
+      border-radius: 100px;
+      background: linear-gradient(
+        rgba(4, 175, 223, 0.5) 0%,
+        rgba(68, 193, 229, 0.5) 48.558%,
+        rgba(99, 202, 231, 0.5) 100%
+      );
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        height: 500px;
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card__img">
+        <img src="chaqueta.webp" alt="chaqueta">
+    </div>
+    <div class="card__body">
+      <div class="card__text">
+        <h3 class="card__title">Chaqueta Blue Statement</h3>
+        <p class="card__desc">Azul eléctrico, diseño vanguardista y actitud urbana. Una pieza única que no pasa desapercibida.</p>
+      </div>
+      <div class="buttonBuy"> Buy Now </div>
+    </div>
+  </div>
+
+</body>
+</html>
